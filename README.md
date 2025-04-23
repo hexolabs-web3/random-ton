@@ -39,7 +39,7 @@ Right now RandomTON factory contract is deployed at ''.
 
 ## Pricing.
 
-For detailed pricing models, transaction fees, and subscription tiers, refer to our dedicated **[RandomTON Pricing Guide](Pricing)**. Below is a high-level summary:
+For detailed pricing models, transaction fees, and subscription tiers, refer to our dedicated **[RandomTON Pricing Guide](PRICING.md)**. Below is a high-level summary:
 
 | Category                  | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ For detailed pricing models, transaction fees, and subscription tiers, refer to 
 | **Freemium Programs**     | Free tier with 100 monthly requests for early-stage projects/experiments.   |
 | **Grants**                | Sponsorship for public goods, open-source projects, and ecosystem builders. |
 
-[**View Full Pricing Details →**](Pricing)
+[**View Full Pricing Details →**](PRICING.md)
 
 ---
 
