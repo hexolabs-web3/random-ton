@@ -1,5 +1,3 @@
-# RandomTON
-
 ## Overview
 RandomTON is a service on the TON Blockchain, enabling smart contracts to request cryptographically secure randomness via Verifiable Random Function (VRF). The system consists of three core components:
 
@@ -55,7 +53,16 @@ For detailed pricing models, transaction fees, and subscription tiers, refer to 
 
 ## Integration Guide
 
-### Step 1. **Deploy Your Client Contract**
+### Step 1. **Download RandomTON trait from our repository**
+
+Clone our [**repository**](https://github.com/hexolabs-web3/random-ton) and copy the trait to your project.
+
+```
+git clone git@github.com:hexolabs-web3/random-ton.git
+cp ./random-ton/random-ton.tact ./your-project/contracts
+```
+
+### Step 2. **Deploy Your Client Contract**
    - Inherit the `RandomTON` trait and initialize critical variables:
      ```tact
      contract TestClientContract with Deployable, Ownable, RandomTON {
@@ -74,11 +81,11 @@ For detailed pricing models, transaction fees, and subscription tiers, refer to 
      }
      ```
 
-### Step 2: Register your own RandomTON Verifier
+### Step 3: Register your own RandomTON Verifier
 Deploy a verifier for your contract by sending a registration request to the factory:
 Send `RandomTONRegister` message to your contract passing the `randomTonFactoryContract` address via message body.
 
-### Step 3: Request Randomness
+### Step 4: Request Randomness
 Trigger a randomness request. Choose between pay-as-you-go or subscription:
 ```tact
 // Pay-as-you-go
@@ -96,7 +103,7 @@ receive( "Request Subscription Randomness" )
 }
 ```
 
-### Step 4: Handle Randomness Response
+### Step 5: Handle Randomness Response
 Override `randomTonHandleRandomness` to process results:
 ```tact
 override fun randomTonHandleRandomness(randomSeed: Int, iterations: Int)
@@ -111,7 +118,7 @@ override fun randomTonHandleRandomness(randomSeed: Int, iterations: Int)
 }
 ```
 
-### Step 5: Manage Subscriptions (Optional)
+### Step 6: Manage Subscriptions (Optional)
 Purchase a subscription tier if needed:
 ```tact
 receive( "Buy Basic Subscription" )
