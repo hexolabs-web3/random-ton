@@ -1,7 +1,7 @@
 import "@stdlib/deploy";
 import "@stdlib/ownable";
 
-import "./lib/random_ton";
+import "./random_ton";
 
 contract TestClientContract with Deployable, Ownable, RandomTON {
 
