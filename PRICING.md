@@ -1,5 +1,5 @@
 ## **Service Deployment Fee**  
-**5.00 TON** (one-time)  
+**10.00 TON** (one-time)  
 
 ### Why is this needed?
 - 🛠 **Smart Contract Deployment**: Your personal ECVRF service requires a dedicated smart contract deployed to the TON blockchain.  
@@ -9,7 +9,7 @@
 ---
 
 ## **Pay-As-You-Go**
-**0.30 TON** per request  
+**1 TON** per request  
 *Best for:* Testing or low-volume usage.   
 - Pay per individual randomness request  
 - No upfront commitment  
@@ -21,16 +21,16 @@ Pre-purchase requests at reduced rates:
 
 | Tier          | Requests | Total Cost | Cost/Request | Savings vs. Pay-As-You-Go |
 |---------------|----------|------------|--------------|---------------------------|
-| **Basic**     | 100      | 27.5 TON   | 0.275 TON    | 8.3%                      |
-| **Professional** | 500   | 130 TON    | 0.26 TON     | 13.3%                     |
-| **Enterprise**| 1000     | 240 TON    | 0.24 TON     | 20%                       |
+| **Basic**     | 100      | 60 TON   | 0.6 TON    | 40%                      |
+| **Professional** | 1000   | 450 TON    | 0.45 TON     | 55%                     |
+| **Enterprise**| 10000     | 3000 TON    | 0.3 TON     | 70%                       |
 
 ### Key Notes:
-1. **Deployment fee (5 TON)** applies once per account, separate from request costs.  
+1. **Deployment fee (10 TON)** applies once per account, separate from request costs.  
 2. **Volume discounts** increase with larger packs:
-   - Save **2.5 TON** on 100 requests vs. pay-as-you-go  
-   - Save **20 TON** on 500 requests vs. pay-as-you-go  
-   - Save **60 TON** on 1000 requests vs. pay-as-you-go  
+   - Save **40 TON** on 100 requests vs. pay-as-you-go  
+   - Save **550 TON** on 1000 requests vs. pay-as-you-go  
+   - Save **7000 TON** on 10000 requests vs. pay-as-you-go  
 3. Pre-paid requests never expire  
 4. Automatic deduction from your balance  
 
@@ -57,8 +57,8 @@ Building for the TON ecosystem? Apply for a grant to offset costs:
 ### Example Total Cost for New Users:
 | Plan          | Initial Cost       | Includes          |
 |---------------|--------------------|-------------------|
-| Basic Tier    | 5 TON (deployment) + 27.5 TON = **32.5 TON** | 100 requests      |
-| Pay-As-You-Go | 5 TON (deployment)    | + 0.30 TON per request |
+| Basic Tier    | 10 TON (deployment) + 60 TON = **70 TON** | 100 requests      |
+| Pay-As-You-Go | 10 TON (deployment)    | + 1 TON per request |
 
 ---
 
