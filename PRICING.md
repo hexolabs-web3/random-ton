@@ -41,7 +41,7 @@ We support builders experimenting with decentralized randomness!
 - 🆓 **Free Tier**: Limited free requests for early-stage projects or testing.  
 - 🎓 **Developer Trials**: Request a temporary free quota to prototype your idea.  
 
-*Eligibility and terms vary. [Reach out](https://randomton.io/) to discuss your use case.*
+*Eligibility and terms vary. [Reach out](https://t.me/hexolabs) to discuss your use case.*
 
 ---
 
@@ -50,7 +50,7 @@ Building for the TON ecosystem? Apply for a grant to offset costs:
 - 🌱 **Open-Source Projects**: Priority for public goods or infrastructure tools.  
 - 🚀 **Startups/Researchers**: Subsidized plans for high-impact initiatives.  
 
-*Grant availability and criteria depend on program capacity. [Contact us](https://randomton.io/) for details.*  
+*Grant availability and criteria depend on program capacity. [Contact us](https://t.me/hexolabs) for details.*  
 
 ---
 
@@ -62,6 +62,6 @@ Building for the TON ecosystem? Apply for a grant to offset costs:
 
 ---
 
-*Need custom volumes or enterprise terms? [Contact us](https://randomton.io/).*
+*Need custom volumes or enterprise terms? [Contact us](https://t.me/hexolabs).*
 
 [**← Back to Main**](README.md)
