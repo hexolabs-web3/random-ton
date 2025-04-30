@@ -17,6 +17,7 @@ message RandomTONRegister
 
 message RegisterVerifier
 {
+    randomTonVersion: Int as uint8;
     clientContract: Address?;
 }
 
@@ -27,6 +28,7 @@ message RandomTONHandleRegistration
 
 message RandomTONRequestRandomness
 {
+    randomTonVersion: Int as uint8;
     iterations: Int as uint256;
 }
 
@@ -54,11 +56,12 @@ trait RandomTON
     randomTonSeed: Int? as uint256; // SHA256 of the VRF beta string.
     randomTonIsHandlingRegistration: Bool; // Flag to protect from rewriting registration
 
-    const randomTonPayAsYouGoFee: Int = ton( "0.3" );
-    const randomTonDeploymentFee: Int = ton( "5" );
-    const randomTonBasicSubsctiptionTierFee: Int = ton( "27.5" );
-    const randomTonProfessionalSubsctiptionTierFee: Int = ton( "130" );
-    const randomTonEnterpriseSubsctiptionTierFee: Int = ton( "240" );
+    const randomTonVersion: Int = 1;
+    const randomTonPayAsYouGoFee: Int = ton( "1" );
+    const randomTonDeploymentFee: Int = ton( "10" );
+    const randomTonBasicSubsctiptionTierFee: Int = ton( "60" );
+    const randomTonProfessionalSubsctiptionTierFee: Int = ton( "450" );
+    const randomTonEnterpriseSubsctiptionTierFee: Int = ton( "3000" );
     const randomTonMinTransactionValue: Int = ton( "0.01" );
 
     // Guards.
@@ -117,7 +120,7 @@ trait RandomTON
                 to    : msg.randomTonFactoryContract,
                 value : self.randomTonDeploymentFee,
                 bounce: true,
-                body  : RegisterVerifier{}.toCell(),
+                body  : RegisterVerifier{ randomTonVersion: self.randomTonVersion }.toCell(),
                 mode  : SendPayFwdFeesSeparately
             }
         );
@@ -195,7 +198,7 @@ trait RandomTON
                 to    : self.randomTonContract!!,
                 value : messageValue,
                 bounce: true,
-                body  : RandomTONRequestRandomness{ iterations: iterations }.toCell(),
+                body  : RandomTONRequestRandomness{ randomTonVersion: self.randomTonVersion, iterations: iterations }.toCell(),
                 mode  : SendPayFwdFeesSeparately
             }
         );
