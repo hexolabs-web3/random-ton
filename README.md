@@ -33,7 +33,7 @@ Client Contract           Verifier Contract           Oracle Network
 
 ## Factory contract address.
 
-Right now RandomTON factory contract is deployed at ''.
+Right now RandomTON factory contract is deployed at '[EQA6pdh4oGPVRUxvX2Ez50rROxaUUkHjTgADGU8mKqUHfS7Z](https://tonviewer.com/EQA6pdh4oGPVRUxvX2Ez50rROxaUUkHjTgADGU8mKqUHfS7Z)'.
 
 ## Pricing.
 
